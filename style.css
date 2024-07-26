@@ -34,14 +34,47 @@ p{
 
 button{
   padding: 1rem;
-  margin: auto;
+  margin: 1rem auto;
   font-size: xx-large;
 }
 
 .enigme{
 }
 
+input{
+  margin: 2rem auto;
+  height: 2rem;
+}
 
+#error{
+  background: #ff6200;
+  width: 75vw;
+  height: 75vw;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  visibility: hidden;
+}
+
+#success{
+  background: #689f48;
+  width: 75vw;
+  height: 75vw;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  visibility: hidden;
+}
 
 
 
