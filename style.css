@@ -76,6 +76,9 @@ input{
   visibility: hidden;
 }
 
+img{
+  width: 100%;
+}
 
 
 .wrapper{

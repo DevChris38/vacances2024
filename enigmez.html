@@ -31,6 +31,26 @@
         <h2>Bravo !!!</h2>
     </div>
 </div>
-<script type="javascript" src="main.js"></script>
+<script>
+    const divError = document.querySelector("#error");
+    const divSuccess = document.querySelector("#success");
+    const buttonEnigmez = document.querySelector("#buttonEnigmez");
+    const inputEnigmez = document.querySelector("#inputEnigmez");
+
+    buttonEnigmez.addEventListener("click", (event) => {
+        if(inputEnigmez.value === "voiture" || inputEnigmez.value === "Voiture" ) {
+            divSuccess.style.visibility = "visible";
+            setTimeout(() => {
+                document.location.href="enigmee.html"
+            }, 1000);
+        } else {
+            divError.style.visibility = "visible";
+            setTimeout(() => {
+                divError.style.visibility = "hidden";
+            }, 1000);
+        }
+    });
+
+</script>
 </body>
 </html>

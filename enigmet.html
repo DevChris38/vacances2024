@@ -12,9 +12,10 @@
     <h1>Nos vacances 2024 !</h1>
 </header>
 <div class="enigme">
-    <h2>Enigme 3</h2>
-    <p>Maintenant que tu es en voiture, tu dois me guider pour atteindre notre objectif : </p>
-    <p class="Enigme">Ousn evdosn sapesr arp PAUMSI</br>Quelle est la direction ? </p>
+    <h2>Enigme 5</h2>
+    <p>Maintenant que nous avons pris l'autoroute direction Lyon, il faut connaitre la sortie que nous devons prendre. Dépêche-toi pour que l'on ne la loupe pas !</p>
+    <img src="maison.jpg"/>
+    <p class="Enigme">Dans quelle ville peut se trouver cette maison ?</p>
     <input type="text" id="inputEnigme" name="inputEnigme" size="20" />
     <button id="buttonEnigme">
         ICI !
@@ -37,10 +38,10 @@
     const inputEnigme = document.querySelector("#inputEnigme");
 
     buttonEnigme.addEventListener("click", (event) => {
-        if(inputEnigme.value === "Ampuis" || inputEnigme.value === "ampuis" ) {
+        if(inputEnigme.value === "strasbourg" || inputEnigme.value === "Strasbourg" ) {
             divSuccess.style.visibility = "visible";
             setTimeout(() => {
-                document.location.href="enigmer.html"
+                document.location.href="enigmet.html"
             }, 1000);
         } else {
             divError.style.visibility = "visible";
