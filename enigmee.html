@@ -37,7 +37,7 @@
     const inputEnigme = document.querySelector("#inputEnigme");
 
     buttonEnigme.addEventListener("click", (event) => {
-        if(inputEnigme.value === "Ampuis" || inputEnigme.value === "ampuis" ) {
+        if(inputEnigme.value.trim() === "Ampuis" || inputEnigme.value.trim() === "ampuis" ) {
             divSuccess.style.visibility = "visible";
             setTimeout(() => {
                 document.location.href="enigmer.html"

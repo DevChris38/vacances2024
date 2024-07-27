@@ -12,11 +12,11 @@
     <h1>Nos vacances 2024 !</h1>
 </header>
 <div class="enigme">
-    <h2>Enigme 1</h2>
-    <p>Cette première énigme te permettra de vérifier que tu as bien compris comment utiliser le site. Réponds à la question suivante :</p>
-    <p class="Enigme">Combien de sites en Auvergne-Rhone-Alpes se trouvent dans le passeport de l'été ?</p>
-    <input type="text" id="inputEnigmea" name="inputEnigmea" size="20" />
-    <button id="buttonEnigmea">
+    <h2>Enigme 6</h2>
+    <p>C'est bien, nous sommes sur la bonne voie, mais ne nous reposons pas sur nos lauriers, une nouvelle direction se profile</p>
+    <p class="Enigme">Tu dois nous diriger vers Camberiacum, terre de naissance d'Olivier Giroud (quelle est cette ville ?)</p>
+    <input type="text" id="inputEnigme" name="inputEnigme" size="20" />
+    <button id="buttonEnigme">
         ICI !
         <span></span>
         <span></span>
@@ -31,16 +31,17 @@
     </div>
 </div>
 <script>
-    const buttonEnigmea = document.querySelector("#buttonEnigmea");
-    const inputEnigmea = document.querySelector("#inputEnigmea");
     const divError = document.querySelector("#error");
     const divSuccess = document.querySelector("#success");
+    const buttonEnigme = document.querySelector("#buttonEnigme");
+    const inputEnigme = document.querySelector("#inputEnigme");
 
-    buttonEnigmea.addEventListener("click", (event) => {
-        if(inputEnigmea.value.trim() === "26") {
+    buttonEnigme.addEventListener("click", (event) => {
+        if(inputEnigme.value.trim() === "chambéry" || inputEnigme.value.trim() === "Chambéry" ||
+            inputEnigme.value.trim() === "chambery" || inputEnigme.value.trim() === "Chambery" ) {
             divSuccess.style.visibility = "visible";
             setTimeout(() => {
-                document.location.href="enigmez.html"
+                document.location.href="enigmeu.html"
             }, 1000);
         } else {
             divError.style.visibility = "visible";

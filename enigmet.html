@@ -38,10 +38,10 @@
     const inputEnigme = document.querySelector("#inputEnigme");
 
     buttonEnigme.addEventListener("click", (event) => {
-        if(inputEnigme.value === "strasbourg" || inputEnigme.value === "Strasbourg" ) {
+        if(inputEnigme.value.trim() === "strasbourg" || inputEnigme.value.trim() === "Strasbourg" ) {
             divSuccess.style.visibility = "visible";
             setTimeout(() => {
-                document.location.href="enigmet.html"
+                document.location.href="enigmey.html"
             }, 1000);
         } else {
             divError.style.visibility = "visible";

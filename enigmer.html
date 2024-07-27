@@ -37,7 +37,7 @@
     const inputEnigme = document.querySelector("#inputEnigme");
 
     buttonEnigme.addEventListener("click", (event) => {
-        if(inputEnigme.value === "Autoroute" || inputEnigme.value === "autoroute" ) {
+        if(inputEnigme.value.trim() === "Autoroute" || inputEnigme.value.trim() === "autoroute" ) {
             divSuccess.style.visibility = "visible";
             setTimeout(() => {
                 document.location.href="enigmet.html"
